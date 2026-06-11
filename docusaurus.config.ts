@@ -123,7 +123,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorials',
-              to: '/docs/overview',
+              to: '/docs/tutorials-overview',
             },
           ],
         },
