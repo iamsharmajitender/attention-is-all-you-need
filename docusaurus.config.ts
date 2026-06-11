@@ -18,12 +18,13 @@ const config: Config = {
   url: 'https://iamsharmajitender.github.io', // Your website URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/attention-is-all-you-need',
+  baseUrl: '/attention-is-all-you-need/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'iamsharmajitender', // Usually your GitHub org/user name.
   projectName: 'attention-is-all-you-need', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
 
