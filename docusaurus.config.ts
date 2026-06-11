@@ -107,7 +107,16 @@ const config: Config = {
           position: 'left',
           label: 'Tutorials',
         },
-        {to: '/blog', label: 'Articles', position: 'left'},
+        {
+          to: '/blog', 
+          label: 'Articles', 
+          position: 'left'
+        },
+            {
+          to: '/blog/tags',
+          label: 'Tags',
+          position: 'right',
+         },
         {
           href: 'https://github.com/iamsharmajitender',
           label: 'GitHub',
@@ -123,7 +132,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorials',
-              to: '/docs/tutorials-overview',
+              to: '/docs/overview',
             },
           ],
         },
@@ -132,15 +141,15 @@ const config: Config = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://x.com/msharmajitender',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://x.com/msharmajitender',
             },
             {
               label: 'X',
-              href: 'https://x.com/docusaurus',
+              href: 'https://x.com/msharmajitender',
             },
           ],
         },

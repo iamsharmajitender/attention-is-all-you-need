@@ -19,7 +19,7 @@ iamsharmajitender:
     # customize the url of the author page at /blog/authors/<permalink>
     permalink: '/jitender-sharma-articles'
   socials:
-    # x: iamsharmajitender
+    x: msharmajitender
     linkedin: iamsharmajitender
     github: iamsharmajitender
     # newsletter: https://thisweekinreact.com
