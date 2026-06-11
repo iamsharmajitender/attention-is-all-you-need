@@ -1,8 +1,8 @@
 {
-  "label": "LLM - Mental Model",
+  "label": "LLM Mental Model",
   "position": 10,
   "link": {
     "type": "generated-index",
-    "description": "5 minutes to learn the most important Docusaurus concepts."
+    "description": "learn concepts related to mental model of LLMs, how they work, how to use them effectively, and how to build applications on top of them."
   }
 }

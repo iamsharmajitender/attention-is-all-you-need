@@ -44,11 +44,13 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
+          // blogSidebarCount: 0,   // ❌ disables year navigation
+          blogTitle: 'AI Architecture Articles',
+          blogDescription: 'Thoughts on AI, Architecture and Engineering Leadership',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -105,7 +107,7 @@ const config: Config = {
           position: 'left',
           label: 'Tutorials',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Articles', position: 'left'},
         {
           href: 'https://github.com/iamsharmajitender',
           label: 'GitHub',
@@ -121,7 +123,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorials',
-              to: '/docs/tutorials-overview',
+              to: '/docs/overview',
             },
           ],
         },
