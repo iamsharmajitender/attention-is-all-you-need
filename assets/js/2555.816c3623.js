@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkattention_is_all_you_need=globalThis.webpackChunkattention_is_all_you_need||[]).push([[2555],{2555(e,a,l){l.d(a,{createWardleyServices:()=>t.J});var t=l(4837);l(9302)}}]);

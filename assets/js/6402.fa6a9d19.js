@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkattention_is_all_you_need=globalThis.webpackChunkattention_is_all_you_need||[]).push([[6402],{6402(e,t,a){a.d(t,{createArchitectureServices:()=>i.S});var i=a(5016);a(9302)}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkattention_is_all_you_need=globalThis.webpackChunkattention_is_all_you_need||[]).push([[7472],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"How LLM Works Under the Hood","permalink":"/attention-is-all-you-need/blog/how-llm-works-under-the-hood","unlisted":false,"date":"2026-06-09T00:00:00.000Z"}]}')}}]);
