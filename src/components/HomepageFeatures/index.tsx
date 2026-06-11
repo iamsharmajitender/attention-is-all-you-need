@@ -29,6 +29,15 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
+    title: 'Agentic AI',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    description: (
+      <>
+      Agentic AI is AI that can reason, plan, and take actions to achieve a goal—not just generate a response.
+      </>
+    ),
+  },
+  {
     title: 'MCP',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (

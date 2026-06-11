@@ -1,6 +1,6 @@
 {
-  "label": "Artificial Intelligence",
-  "position": 2,
+  "label": "LLM - Mental Model",
+  "position": 10,
   "link": {
     "type": "generated-index",
     "description": "5 minutes to learn the most important Docusaurus concepts."

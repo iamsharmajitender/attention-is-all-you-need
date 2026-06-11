@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Under the hood',
-  tagline: 'Attention is all you need',
+  tagline: 'A curated library of AI resources',
   favicon: 'img/favicon.ico',
 
   // // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -70,8 +70,18 @@ const config: Config = {
   ],
 
   // Enable Docusaurus mermaid theme
-  themes: ['@docusaurus/theme-mermaid'],
-
+ themes: [
+  '@docusaurus/theme-mermaid',
+  [
+    require.resolve('@easyops-cn/docusaurus-search-local'),
+    {
+      hashed: true,
+      language: ['en'],
+      indexDocs: true,
+      indexBlog: true,
+    },
+  ],
+],
   markdown: {
     mermaid: true,
   },
@@ -83,9 +93,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Under the hood',
+      title: 'Knowledge Management',
       logo: {
-        alt: 'Under the hood',
+        alt: 'Knowledge Management',
         src: 'img/logo.svg',
       },
       items: [
@@ -93,7 +103,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Library',
+          label: 'Tutorials',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -107,11 +117,11 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Tutorials',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Tutorials',
+              to: '/docs/tutorials-overview',
             },
           ],
         },
