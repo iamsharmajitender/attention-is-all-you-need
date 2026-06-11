@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkattention_is_all_you_need=globalThis.webpackChunkattention_is_all_you_need||[]).push([[4004],{5669(e){e.exports=JSON.parse('{"metadata":{"permalink":"/attention-is-all-you-need/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
