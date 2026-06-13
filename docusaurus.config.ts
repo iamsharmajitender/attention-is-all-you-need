@@ -18,12 +18,12 @@ const config: Config = {
   url: 'https://iamsharmajitender.github.io', // Your website URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/attention-is-all-you-need/',
+  baseUrl: '/architects-handbook/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'iamsharmajitender', // Usually your GitHub org/user name.
-  projectName: 'attention-is-all-you-need', // Usually your repo name.
+  projectName: 'architects-handbook', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
@@ -95,9 +95,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Jitender Sharma',
+      title: 'Architects Handbook',
       logo: {
-        alt: 'Jitender Sharma',
+        alt: 'Architects Handbook',
         src: 'img/logo.svg',
       },
       items: [
