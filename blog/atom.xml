@@ -243,8 +243,7 @@ Cost = traffic * tokens * latency requirements</p></div></div>
         <author>
             <name>Jitender Sharma</name>
         </author>
-        <category label="How LLM Works Under the Hood" term="How LLM Works Under the Hood"/>
         <category label="LLM" term="LLM"/>
-        <category label="LLM Four Stages" term="LLM Four Stages"/>
+        <category label="EXP" term="EXP"/>
     </entry>
 </feed>
