@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkarchitects_handbook=globalThis.webpackChunkarchitects_handbook||[]).push([[4737],{4737(a,e,c){c.d(e,{createPieServices:()=>h.f});var h=c(532);c(9302)}}]);

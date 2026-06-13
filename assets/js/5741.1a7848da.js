@@ -1,0 +1,1 @@
+(globalThis.webpackChunkarchitects_handbook=globalThis.webpackChunkarchitects_handbook||[]).push([[5741],{5741(){}}]);

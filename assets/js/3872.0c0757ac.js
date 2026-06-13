@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkarchitects_handbook=globalThis.webpackChunkarchitects_handbook||[]).push([[3872],{3872(a,c,e){e.d(c,{createRadarServices:()=>h.f});var h=e(5160);e(9302)}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkarchitects_handbook=globalThis.webpackChunkarchitects_handbook||[]).push([[1903],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/blogs","blogTitle":"Polished Point of View","authorsListPath":"/blogs/authors"}')}}]);

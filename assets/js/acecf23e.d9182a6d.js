@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkattention_is_all_you_need=globalThis.webpackChunkattention_is_all_you_need||[]).push([[1903],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/blogs","blogTitle":"Polished Point of View","authorsListPath":"/blogs/authors"}')}}]);

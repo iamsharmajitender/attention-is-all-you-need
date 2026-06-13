@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkattention_is_all_you_need=globalThis.webpackChunkattention_is_all_you_need||[]).push([[7180],{7180(e,a,t){t.d(a,{createPacketServices:()=>i.$});var i=t(4824);t(9302)}}]);
