@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkattention_is_all_you_need=globalThis.webpackChunkattention_is_all_you_need||[]).push([[1903],{1912(t){t.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"AI Architecture Articles","authorsListPath":"/blog/authors"}')}}]);
