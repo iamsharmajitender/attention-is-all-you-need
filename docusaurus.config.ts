@@ -137,7 +137,7 @@ const config: Config = {
             },
             {
               label: 'Tags',
-              to: '/blogs',
+              to: '/blogs/tags',
             },
           ],
         },

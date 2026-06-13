@@ -14,12 +14,13 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          Systems Design, Multicloud Architecture, AI & LLM Architecture
+        Systems Design, Multicloud Architecture, AI & LLM Systems
         </Heading>
 
         <p className="hero__subtitle">
-          I design scalable systems, enterprise architectures, and explore how LLMs actually work under the hood.
-        </p>
+        I break down how modern systems actually work — from distributed architectures and cloud platforms to LLMs, RAG, and agentic AI.
+        <br/> Practical insights on building scalable, reliable, and AI-native systems.
+         </p>
 
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/about">

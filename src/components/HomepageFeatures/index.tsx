@@ -15,8 +15,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        A statistical engine trained on vast amounts of text to predict the next token and generate human-like language.
-      </>
+How large language models work under the hood — training, inference, tokenization, memory, and limitations.      </>
     ),
   },
   {
@@ -24,8 +23,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        A technique that grounds an LLM with external knowledge, allowing it to answer using up-to-date and organization-specific information.
-      </>
+How retrieval augments generation through grounding, retrieval pipelines, and context orchestration for enterprise AI systems.
+  </>
     ),
   },
   {
@@ -33,8 +32,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-      Agentic AI is AI that can reason, plan, and take actions to achieve a goal—not just generate a response.
-      </>
+How AI systems plan, reason, use tools, and execute multi-step workflows.      </>
     ),
   },
   {
@@ -42,8 +40,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        A standardized way for AI models to securely connect to tools, data sources, and applications through a common interface.
-      </>
+A protocol layer for standardizing how models connect to tools, data, and enterprise applications.  
+   </>
     ),
   },
   {
@@ -51,18 +49,16 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        The framework that ensures AI systems operate responsibly, manage risks effectively, and comply with regulatory and organizational requirements.
-      </>
+Designing trustworthy AI systems with security, risk controls, and operational governance.   </>
     ),
   },
     {
-    title: 'Systemic Design & Architecture',
+    title: 'System Design & Architecture',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-       Building end-to-end enterprise systems that connect strategy, platforms, and execution at scale.
-      </>
-    ),
+Distributed systems, multicloud platforms, integration patterns, and enterprise architecture at scale.
+   </> ),
   },
 ];
 
