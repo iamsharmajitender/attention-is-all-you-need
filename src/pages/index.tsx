@@ -26,7 +26,7 @@ function HomepageHeader() {
             About Me
           </Link>
 
-          {/* <Link className="button button--primary button--lg" to="/blog">
+          {/* <Link className="button button--primary button--lg" to="/blogs">
             Read Insights
           </Link> */}
         </div>

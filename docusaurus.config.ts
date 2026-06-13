@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Under the hood',
-  tagline: 'A curated library of AI resources',
+  title: 'Jitender Sharma - Architects Handbook',
+  tagline: 'A curated library of Technical resources, thoughts and best practices for Software Architects.',
   favicon: 'img/favicon.ico',
 
   // // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -42,15 +42,15 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          routeBasePath: 'library',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // blogSidebarCount: 0,   // ❌ disables year navigation
-          blogTitle: 'AI Architecture Articles',
-          blogDescription: 'Thoughts on AI, Architecture and Engineering Leadership',
+          blogTitle: 'Polished Point of View',
+          blogDescription: 'Polished Point of View',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -63,6 +63,8 @@ const config: Config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
+          // Serve blog at /blogs instead of /blog
+          routeBasePath: 'blogs',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -105,15 +107,15 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Knowledge Base',
+          label: 'Library',
         },
         {
-          to: '/blog', 
-          label: 'Blogs', 
-          position: 'left'
+          to: '/blogs',
+          label: 'Blogs',
+          position: 'left',
         },
             {
-          to: '/blog/tags',
+          to: '/blogs/tags',
           label: 'Tags',
           position: 'right',
          },
@@ -126,16 +128,16 @@ const config: Config = {
           title: 'Links',
           items: [
             {
-              label: 'Tutorials',
-              to: '/docs/overview',
+              label: 'Library',
+              to: '/library/overview',
             },
             {
               label: 'Blogs',
-              to: '/blog',
+              to: '/blogs',
             },
             {
               label: 'Tags',
-              to: '/blog',
+              to: '/blogs',
             },
           ],
         },
