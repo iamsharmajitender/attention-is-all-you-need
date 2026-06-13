@@ -105,7 +105,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorials',
+          label: 'Knowledge Base',
         },
         {
           to: '/blog', 
@@ -117,11 +117,6 @@ const config: Config = {
           label: 'Tags',
           position: 'right',
          },
-        {
-          href: 'https://github.com/iamsharmajitender',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
@@ -148,12 +143,12 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://x.com/msharmajitender',
+              label: 'LinkedIn',
+              href: 'https://linkedin.com/in/iamsharmajitender',
             },
-            {
-              label: 'Discord',
-              href: 'https://x.com/msharmajitender',
+          {
+              label: 'GitHub',
+              href: 'https://github.com/iamsharmajitender',
             },
             {
               label: 'X',
@@ -168,14 +163,10 @@ const config: Config = {
               label: 'About Me',
               to: '/about',
             },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/iamsharmajitender/attention-is-all-you-need',
-            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Jitender Sharma.`,
     },
     prism: {
       theme: prismThemes.github,

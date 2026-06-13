@@ -1,12 +1,12 @@
 ---
-sidebar_position: 1
-slug: Overview
-title: Overview
-authors: [iamsharmajitender]
+slug: how-llm-works-under-the-hood
+title: How LLM Works Under the Hood
 tags: [How LLM Works Under the Hood, LLM, LLM Four Stages]
+authors: [iamsharmajitender]
+
 ---
 
-# LLM Mental Model
+# How LLM Works Under the Hood (and why it Matters for Enterprise Architecture)
 
 Most discussions about LLMs focus on prompts, tools, and frameworks. However, few explain how the model actually works under the hood and why that matters when building real systems.
 
@@ -163,9 +163,106 @@ During inference, the model has **no memory** of what was asked or answered befo
 
 :::tip[TAKEAWAY]
 
-Training builds the geometry. Inference just navigates it one token at a time. Treat the LLM as frozen dependency; engineer everything else around it.
+Training builds the geometry. Inference just navigates it one token at a time.
+:::
+
+## The Mental Model most people get wrong
+- LLM ≠ continuously learning systems
+- LLM ≠ dynamic knowledge base
+- LLM ≠ autonomous agent
+
+## What this means for Enterprise Systems
+Understanding how LLMs actually work leads to a critical shift in how we design AI systems. The model itself is not "the system" — it's a **fixed component inside a larger architecture**.
+
+### 1. Why RAG is required
+LLMs do not have access to fresh and private data. Their knowledge is fixed at training time.
+
+**To make them useful in enterprise:**
+**To make them useful in enterprise:**
+- Connect them to internal data sources
+- Inject context at runtime
+
+This is why **Retrieval Augmentation (RAG)** becomes a foundational pattern.
+
+### 2. Why agents/orchestration are external
+LLMs are:
+- Stateless
+- Reactive
+- Single-step predictors
+
+They cannot:
+- Execute workflows
+- Maintain long-running state
+- Coordinate systems
+
+This is why **agentic systems and orchestration layers exist outside the model**
+
+:::important
+
+The intelligence is in the model and the **control** is in the system design.
 
 :::
+
+### 3. Why governance is outside the model
+You cannot "patch" behavior inside a trained model in real time. Enterprise systems must implement:
+- Guardrails
+- Validation layers
+- Monitoring and evaluation
+- Policy enforcement
+
+All of these sit **around the model, not inside it**
+
+### 4. Why inference cost dominates
+Training is:
+- One-time
+- Expensive but amortized
+
+Inference is:
+Inference is:
+- Continuous
+- Scales with usage
+
+:::important
+For enterprise systems:
+Cost = traffic * tokens * latency requirements
+:::
+
+### 5. Why scale and cost must be designed upfront
+Because LLMs don't learn in production, every interaction requires:
+- Full inference execution
+- Token processing (input+output)
+- External system calls (RAG /agents)
+
+This means:
+- Cost scales with usage, not with training
+- Latency compounds across system layers
+- Poor design = exponential cost growth
+
+In real systems, if not handled correctly:
+- RAG increases token usage
+- Agents introduce multiple-step execution
+- Orchestration adds round trips
+
+:::important
+
+Training is a **one-off capital cost**; inference is the **ongoing operational cost**. Also, without careful design, AI systems become **unpredictable and expensive at scale**
+
+:::
+
+## Final Takeaway
+
+The model provides intelligence and the system provides control.
+
+Modern AI architecture is not “LLM design” It is “system design around a frozen model”
+
+Traffic × Tokens × Latency
+
+:::tip[TAKEAWAY]
+
+Treat the LLM as frozen dependency; engineer everything else around it.
+
+:::
+
 
 
 
