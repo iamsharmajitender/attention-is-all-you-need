@@ -3,6 +3,8 @@
   "position": 20,
   "link": {
     "type": "generated-index",
+    "slug":"/rag/mental-model",
+    "title": "RAG Mental Model",
     "description": "5 minutes to learn the most important Docusaurus concepts."
   }
 }
