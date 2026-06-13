@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkattention_is_all_you_need=globalThis.webpackChunkattention_is_all_you_need||[]).push([[1258],{2667(e){e.exports=JSON.parse('{"metadata":{"permalink":"/blogs","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Polished Point of View","blogTitle":"Polished Point of View"}}')}}]);
