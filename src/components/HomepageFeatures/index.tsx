@@ -46,12 +46,21 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
-    {
+  {
     title: 'Governance, Risk & Compliance',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
         The framework that ensures AI systems operate responsibly, manage risks effectively, and comply with regulatory and organizational requirements.
+      </>
+    ),
+  },
+    {
+    title: 'Systemic Design & Architecture',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+       Building end-to-end enterprise systems that connect strategy, platforms, and execution at scale.
       </>
     ),
   },

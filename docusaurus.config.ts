@@ -95,9 +95,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Knowledge Management',
+      title: 'Jitender Sharma',
       logo: {
-        alt: 'Knowledge Management',
+        alt: 'Jitender Sharma',
         src: 'img/logo.svg',
       },
       items: [
@@ -109,7 +109,7 @@ const config: Config = {
         },
         {
           to: '/blog', 
-          label: 'Articles', 
+          label: 'Blogs', 
           position: 'left'
         },
             {
@@ -128,11 +128,19 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Tutorials',
+          title: 'Links',
           items: [
             {
               label: 'Tutorials',
               to: '/docs/overview',
+            },
+            {
+              label: 'Blogs',
+              to: '/blog',
+            },
+            {
+              label: 'Tags',
+              to: '/blog',
             },
           ],
         },
@@ -157,12 +165,12 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'About Me',
+              to: '/about',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/iamsharmajitender/attention-is-all-you-need',
             },
           ],
         },
