@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkarchitects_handbook=globalThis.webpackChunkarchitects_handbook||[]).push([[1258],{2667(o){o.exports=JSON.parse('{"metadata":{"permalink":"/blogs","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Polished Point of View","blogTitle":"Polished Point of View"}}')}}]);

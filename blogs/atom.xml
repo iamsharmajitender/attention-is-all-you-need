@@ -2,109 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jitendersharma.dev/blogs</id>
     <title>Jitender Sharma - Architects Handbook Blog</title>
-    <updated>2026-06-11T00:00:00.000Z</updated>
+    <updated>2026-06-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jitendersharma.dev/blogs"/>
     <subtitle>Jitender Sharma - Architects Handbook Blog</subtitle>
     <icon>https://jitendersharma.dev/img/favicon.ico</icon>
-    <entry>
-        <title type="html"><![CDATA[RAG is Not a Database]]></title>
-        <id>https://jitendersharma.dev/blogs/rag-is-not-a-database</id>
-        <link href="https://jitendersharma.dev/blogs/rag-is-not-a-database"/>
-        <updated>2026-06-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Most discussions about Retrieval-Augmented Generation (RAG) frame it as a way to “connect LLMs to data.”]]></summary>
-        <content type="html"><![CDATA[<p>Most discussions about Retrieval-Augmented Generation (RAG) frame it as a way to “connect LLMs to data.”
-That framing is incomplete — and in large-scale systems, misleading.</p>
-<p>RAG is not a database layer. It is a runtime context construction system for a frozen model.</p>
-<p>Understanding this distinction is critical for anyone designing production AI systems.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rag-does-not-store-knowledge">RAG does not store knowledge<a href="https://jitendersharma.dev/blogs/rag-is-not-a-database#rag-does-not-store-knowledge" class="hash-link" aria-label="Direct link to RAG does not store knowledge" title="Direct link to RAG does not store knowledge" translate="no">​</a></h2>
-<p>A common misconception is that RAG acts like a knowledge store.</p>
-<p>That is not accurate.</p>
-<p>Instead:</p>
-<p>Source data lives in external systems (databases, documents, APIs)
-Vector indexes store semantic representations, not ground truth
-Retrieval does not return facts — it returns relevant fragments of representation</p>
-<p>RAG does not guarantee correctness.
-It does not enforce consistency.
-It does not maintain a canonical state of knowledge.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rag-is-a-context-assembly-pipeline-not-a-query-engine">RAG is a context assembly pipeline, not a query engine<a href="https://jitendersharma.dev/blogs/rag-is-not-a-database#rag-is-a-context-assembly-pipeline-not-a-query-engine" class="hash-link" aria-label="Direct link to RAG is a context assembly pipeline, not a query engine" title="Direct link to RAG is a context assembly pipeline, not a query engine" translate="no">​</a></h2>
-<p>Traditional databases:</p>
-<p>Deterministic queries
-Structured schema
-Exact retrieval guarantees</p>
-<p>RAG systems:</p>
-<p>Approximate semantic retrieval
-Probabilistic ranking
-Context window assembly for an LLM</p>
-<p>The output of RAG is not a “result set.”
-It is a prompt-ready context bundle.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="retrieval-is-not-reasoning-or-verification">Retrieval is not reasoning or verification<a href="https://jitendersharma.dev/blogs/rag-is-not-a-database#retrieval-is-not-reasoning-or-verification" class="hash-link" aria-label="Direct link to Retrieval is not reasoning or verification" title="Direct link to Retrieval is not reasoning or verification" translate="no">​</a></h2>
-<p>Retrieved chunks are:</p>
-<p>Semantically relevant
-Not necessarily correct
-Not validated against a source of truth at retrieval time</p>
-<p>The LLM becomes the reasoning layer that interprets this context.</p>
-<p>This introduces a key architectural reality:</p>
-<p>RAG does not reduce hallucinations by itself — it only changes the input surface area.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rag-is-constrained-by-the-context-window">RAG is constrained by the context window<a href="https://jitendersharma.dev/blogs/rag-is-not-a-database#rag-is-constrained-by-the-context-window" class="hash-link" aria-label="Direct link to RAG is constrained by the context window" title="Direct link to RAG is constrained by the context window" translate="no">​</a></h2>
-<p>Unlike databases, RAG operates under a hard constraint:</p>
-<p>Limited tokens
-Limited attention capacity
-Competing relevance signals</p>
-<p>This forces system-level decisions:</p>
-<p>Chunking strategy
-Embedding granularity
-Ranking and filtering logic</p>
-<p>These are not data concerns — they are cognitive load management decisions for the model.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rag-is-a-probabilistic-system-not-a-deterministic-one">RAG is a probabilistic system, not a deterministic one<a href="https://jitendersharma.dev/blogs/rag-is-not-a-database#rag-is-a-probabilistic-system-not-a-deterministic-one" class="hash-link" aria-label="Direct link to RAG is a probabilistic system, not a deterministic one" title="Direct link to RAG is a probabilistic system, not a deterministic one" translate="no">​</a></h2>
-<p>Unlike traditional data systems:</p>
-<p>Retrieval is not guaranteed complete
-Ranking is heuristic
-Similarity search is approximate
-Results vary with embeddings and query phrasing</p>
-<p>This makes RAG inherently:</p>
-<p>Non-deterministic
-Sensitive to configuration
-Difficult to reason about without observability</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="system-design-complexity-shifts-to-the-edges">System design complexity shifts to the edges<a href="https://jitendersharma.dev/blogs/rag-is-not-a-database#system-design-complexity-shifts-to-the-edges" class="hash-link" aria-label="Direct link to System design complexity shifts to the edges" title="Direct link to System design complexity shifts to the edges" translate="no">​</a></h2>
-<p>Once you understand RAG correctly, a key shift happens:</p>
-<p>The complexity moves away from the model and into the system:</p>
-<p>Chunking strategy becomes critical
-Embedding model choice becomes architectural
-Retrieval ranking becomes a relevance system
-Prompt construction becomes a control surface</p>
-<p>In other words:</p>
-<p>RAG systems are not “LLM integrations” — they are retrieval + reasoning pipelines.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rag-is-not-the-intelligence-layer--it-is-the-context-layer">RAG is not the intelligence layer — it is the context layer<a href="https://jitendersharma.dev/blogs/rag-is-not-a-database#rag-is-not-the-intelligence-layer--it-is-the-context-layer" class="hash-link" aria-label="Direct link to RAG is not the intelligence layer — it is the context layer" title="Direct link to RAG is not the intelligence layer — it is the context layer" translate="no">​</a></h2>
-<p>A useful mental model:</p>
-<p>LLM = reasoning engine (frozen function)
-RAG = context shaping system
-Orchestration layer = control logic</p>
-<p>RAG does not make the system intelligent.
-It determines what the model is allowed to see before it reasons.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="implications-for-enterprise-architecture">Implications for enterprise architecture<a href="https://jitendersharma.dev/blogs/rag-is-not-a-database#implications-for-enterprise-architecture" class="hash-link" aria-label="Direct link to Implications for enterprise architecture" title="Direct link to Implications for enterprise architecture" translate="no">​</a></h2>
-<p>Treating RAG as a database abstraction leads to predictable failures:</p>
-<p>Over-reliance on embeddings as “truth”
-Poor chunk design leading to lost context
-Inconsistent retrieval quality across use cases
-Unexpected hallucinations due to missing context rather than model failure</p>
-<p>Instead, production systems should treat RAG as:</p>
-<p>A context engineering layer
-A relevance filtering system
-A probabilistic pre-processing stage for reasoning</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="final-takeaway">Final takeaway<a href="https://jitendersharma.dev/blogs/rag-is-not-a-database#final-takeaway" class="hash-link" aria-label="Direct link to Final takeaway" title="Direct link to Final takeaway" translate="no">​</a></h2>
-<p>RAG is often described as a bridge between data and LLMs.</p>
-<p>A more accurate description is:</p>
-<p>RAG is a probabilistic context construction system that shapes what a frozen model can reason about at runtime.</p>
-<p>The model provides intelligence.
-The system determines what intelligence can see.</p>]]></content>
-        <author>
-            <name>Jitender Sharma</name>
-        </author>
-        <category label="RAG" term="RAG"/>
-        <category label="RAG is not a database" term="RAG is not a database"/>
-        <category label="vector db" term="vector db"/>
-    </entry>
     <entry>
         <title type="html"><![CDATA[How LLM Works Under the Hood]]></title>
         <id>https://jitendersharma.dev/blogs/how-llm-works-under-the-hood</id>
